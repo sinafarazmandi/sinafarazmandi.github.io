@@ -1,0 +1,103 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sina Farazmandi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Contact Sina Farazmandi for bioinformatics research inquiries or collaborations. Reach me via email, LinkedIn, or social media.">
+    <style>
+        /* Flexbox container for contact sections */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            gap: 20px; /* Adds space between columns */
+        }
+
+        /* Left column: Get in Touch */
+        .get-in-touch {
+            flex: 1;
+            min-width: 300px; /* Ensures it doesn't shrink too much */
+        }
+
+        /* Right column: Contact Form */
+        .contact-form {
+            flex: 1;
+            min-width: 300px; /* Ensures it doesn't shrink too much */
+        }
+
+        /* Input and Button Styling */
+        form input, form textarea, form button {
+            width: 100%; /* Makes form elements fill the column */
+            box-sizing: border-box; /* Ensures consistent padding */
+            margin-bottom: 15px; /* Adds space between elements */
+        }
+
+        form button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        form button:hover {
+            background-color: #005a99; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="research.html">Research</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <!-- Left Column: Get in Touch -->
+                <div class="get-in-touch">
+                    <h3>Get in Touch</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> Personal Email: <a href="mailto:s.farazmandi@gmail.com">s.farazmandi@gmail.com</a></li>
+                        <li><i class="fas fa-university"></i> Institutional Email: <a href="mailto:s.farazmandi@modares.ac.ir">s.farazmandi@modares.ac.ir</a></li>
+                        <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/sina-farazmandi" target="_blank">sina-farazmandi</a></li>
+                        <li><i class="fab fa-twitter"></i> X (Twitter): <a href="https://x.com/sinafarazmandi" target="_blank">@sinafarazmandi</a></li>
+                        <li><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/people/Sina-Farazmandi/pfbid022cj6MZZznK8rER8XiMxyxsCPzjq8TwFqy3ShUC8DBJkF1cSBmG4bR1trH4KC1eAUl/" target="_blank">sinafarazmandi</a></li>
+                        <li><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/sinafarazmandi/" target="_blank">@sinafarazmandi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="contact-form">
+                    <h3>Contact Form</h3>
+                    <form action="mailto:s.farazmandi@gmail.com" method="post" enctype="text/plain">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sina Farazmandi | <a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sina Farazmandi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Discover the projects of Sina Farazmandi, focusing on computational biology, drug discovery, and cancer genomics.">
+    <style>
+        /* Circular GIF Styling */
+        .header-gif {
+            display: block;
+            margin: 0 auto;
+            width: 150px; /* Adjust to control size */
+            height: 150px;
+            border-radius: 50%; /* Circular shape */
+            border: 3px solid #007acc; /* Elegant border */
+            margin-bottom: 15px; /* Space below the GIF */
+            object-fit: cover; /* Ensures proper scaling */
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            margin-bottom: 20px;
+        }
+
+        .dropdown button {
+            background-color: #007acc;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+            width: 100%;
+            font-size: 1em;
+            display: block;
+        }
+
+        .dropdown button:hover {
+            background-color: #005a99;
+        }
+
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .dropdown-content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .dropdown-content ul {
+            margin: 0;
+            padding: 0 20px;
+            list-style-type: disc;
+        }
+
+        .dropdown-content ul li {
+            margin-bottom: 10px;
+        }
+            /* Highlight styling for the link */
+        .highlighted-link {
+        color: #ff4500; /* Use a standout color (e.g., orange) */
+        font-weight: bold; /* Make the text bold */
+        text-decoration: underline; /* Underline for emphasis */
+        }
+
+        .highlighted-link:hover {
+        color: #007acc; /* Change color on hover for interactivity */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Circular GIF at the top -->
+        <img src="assets/images/projects.gif" alt="Projects Header GIF" class="header-gif">
+        
+        <h1>Projects</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="research.html">Research</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Projects</h2>
+            <div class="dropdown">
+                <button onclick="toggleDropdown('current1')">Current Research Projects</button>
+                <div id="current1" class="dropdown-content">
+                    <ul>
+                        <li>Machine Learning-Based Identification of DKK1 as a Drug Target for Lung Adenocarcinoma and Virtual Screening of FDA-Approved Drugs</li>
+                        <li>Benchmarking Descriptor-Free Deep Learning and Classical QSAR Methods in Predicting Inhibitors of Cancer Drug Resistance Proteins</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="toggleDropdown('current2')">Previous Reseach Projects</button>
+                <div id="current2" class="dropdown-content">
+                    <ul>
+                        <li>Identification of a Novel lncRNA Prognostic Signature for Lung Adenocarcinoma via ML-based Feature Selection and Artificial Neural Networks</li>
+                        <li>Addressing Left Censoring in Cancer Genomics: A Semi Supervised Learning Approach</li>
+                        <li>Prognostic Genetic Markers: Machine Learning Insights into Longevity in Glioblastoma</li>
+                        <li>M.Sc. Thesis: Drug Repurposing for Triple Negative Breast Cancer Treatment Based on Gene Expression Data Using Computational Approaches</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="toggleDropdown('current3')">Selected Academic Projects</button>
+                <div id="current3" class="dropdown-content">
+                    <ul>
+                        <li>
+                            CoVar, a Molecular and Epidemiological Database for Major SARS-CoV-2 Variants, Biological Database course project, Fall 2022 semester, Available at 
+                            <a href="https://covar.onrender.com" target="_blank" class="highlighted-link">covar.onrender.com</a>.
+                        </li>
+                        <li>Whole Exome Sequencing Variant Analysis of a Family Trio Using GATK, Computational Genomics course project, Spring 2022 semester</li>
+                        <li>QSAR Study of 9,10-Dihydrophenanthrene Derivatives as SARSCoV-2 3CLpro Inhibitors for Treating COVID-19, Drug Design course project, Spring 2022 semester</li>
+                        <li>Homology Modeling, Docking Studies and Molecular Dynamics Simulations of Human cAMP-specific 3',5'- cyclic phosphodiesterase 4B, Modelling and Prediction of Macromolecular Structures course project, Spring 2022 semester</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sina Farazmandi | <a href="#top">Back to Top</a></p>
+    </footer>
+
+    <script>
+        // JavaScript for Dropdown Toggle
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
